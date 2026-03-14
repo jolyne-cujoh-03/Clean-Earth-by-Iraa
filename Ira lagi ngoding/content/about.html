@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Clean Earth by Ira</title>
+    <style>
+        :root { 
+            --ungu: #4b0082; 
+            --gold: #D4AF37; 
+            --putih: #ffffff; 
+        }
+
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f4f4; 
+            margin: 0; 
+            padding: 20px; 
+        }
+        
+        nav { 
+            background: var(--ungu); 
+            padding: 15px; 
+            text-align: center; 
+            border-bottom: 3px solid var(--gold); 
+        }
+        
+        nav a { 
+            color: var(--gold); 
+            text-decoration: none; 
+            font-weight: bold; 
+            margin: 0 15px; 
+        }
+
+        .profile-container { 
+            max-width: 600px; 
+            margin: 40px auto; 
+            background: var(--putih); 
+            padding: 40px; 
+            border-radius: 20px; 
+            text-align: center; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15); 
+            border: 2px solid var(--gold);
+        }
+
+        .web-name { 
+            color: var(--ungu); 
+            font-size: 2.5rem; 
+            text-transform: uppercase; 
+            margin-bottom: 20px; 
+        }
+
+        /* EFEK FOTO PROFIL */
+        .profile-img { 
+            width: 200px; 
+            height: 200px; 
+            border-radius: 50%; 
+            border: 5px solid var(--gold); 
+            object-fit: cover; 
+            margin-bottom: 20px;
+            cursor: pointer; /* Menandakan bisa diklik */
+            transition: transform 0.5s ease, box-shadow 0.3s ease;
+        }
+
+        /* ANIMASI SAAT KLIK (ACTIVE) */
+        .profile-img:active {
+            transform: scale(1.2) rotate(360deg);
+            box-shadow: 0 0 20px var(--gold);
+        }
+        
+        .info-group { 
+            text-align: left; 
+            display: inline-block; 
+            margin-top: 20px; 
+        }
+        
+        .info-group p { 
+            margin: 10px 0; 
+            font-size: 1.1rem; 
+        }
+        
+        .info-group strong { 
+            color: var(--ungu); 
+            display: inline-block; 
+            width: 120px; 
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="../content/index.html">HOME</a>
+        <a href="../content/pencemaran.html">PENCEMARAN</a>
+    </nav>
+
+    <div class="profile-container">
+        <h1 class="web-name">Clean Earth by Ira</h1>
+        
+        <img src="../assets/gian.jpeg" alt="Foto Ira" class="profile-img" title="Lobg click!">
+        
+        <div class="info-group">
+            <p><strong>Nama:</strong> Gian Syakirah Siregar</p>
+            <p><strong>Kelas:</strong> XII 1</p>
+            <p><strong>Jurusan:</strong> Pengembangan Perangkat Lunak</p>
+            <p><strong>Sekolah:</strong> SMK INFORMATIKA CBI</p>
+            <p><strong>No. Telp:</strong> 0881-0252-27454</p>
+            <p><strong>Instagram:</strong> @xv.iraa03</p>
+            <p><strong>Email:</strong> giansyakirah@gmail.com</p>
+        </div>
+    </div>
+
+</body>
+</html>
